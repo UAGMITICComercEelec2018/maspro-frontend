@@ -1,17 +1,13 @@
-import React, { Component, Fragment } from 'react';
-import logo from './logo.png';
-import oxxo from './oxxopay.svg';
-import paypal from './paypal.svg';
-import payments from './methods_statement_cards.png';
-import './App.css';
-import Switch from 'react-router-dom/es/Switch';
-import Route from 'react-router-dom/es/Route';
-import Redirect from 'react-router-dom/es/Redirect';
-import BrowserRouter from 'react-router-dom/es/BrowserRouter';
+import React, { Component, Fragment } from "react";
+import logo from "./logo.png";
+import "./App.css";
+import Switch from "react-router-dom/es/Switch";
+import Route from "react-router-dom/es/Route";
+import Redirect from "react-router-dom/es/Redirect";
+import BrowserRouter from "react-router-dom/es/BrowserRouter";
 
 class App extends Component {
   render() {
-        wordWrap: 'break-word',
     return (
       <BrowserRouter>
         <Switch>
@@ -29,114 +25,119 @@ export default App;
 class Item extends Component {
   styles = {
     itemContainer: {
-      display: 'flex',
-      height: '50rem',
-      paddingTop: '5rem',
-      paddingLeft: '15rem',
-      paddingRight: '10rem'
+      display: "flex",
+      height: "50rem",
+      paddingTop: "5rem",
+      paddingLeft: "15rem",
+      paddingRight: "10rem"
     },
     navContainer: {
-      position: 'fixed',
-      padding: '1rem',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      height: '4rem',
-      width: '100%',
-      backgroundColor: 'white',
-      borderBottom: '1px solid rgba(0,0,0,.1)'
+      position: "fixed",
+      padding: "1rem",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      height: "4rem",
+      width: "100%",
+      backgroundColor: "white",
+      borderBottom: "1px solid rgba(0,0,0,.1)"
     },
     navLogo: {
-      height: '80%'
+      height: "80%"
     },
     navLinksContainer: {
-      display: 'flex',
-      paddingRight: '4rem'
+      display: "flex",
+      paddingRight: "4rem"
     },
     navLink: {
       fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-      fontWeight: '300',
-      fontSize: '1.1rem',
-      wordWrap: 'break-word',
-      textDecoration: 'none',
-      color: 'inherit',
-      marginRight: '1rem'
+      fontWeight: "300",
+      fontSize: "1.1rem",
+      wordWrap: "break-word",
+      textDecoration: "none",
+      color: "inherit",
+      marginRight: "1rem"
     },
     imageContainer: {
-      display: 'flex',
-      justifyContent: 'flex-end',
-      alignItems: 'center',
-      height: '100%',
+      display: "flex",
+      justifyContent: "flex-end",
+      alignItems: "center",
+      height: "100%",
       flexGrow: 3
     },
+    img: {
+      width: "30rem"
+    },
     itemImage: {
-      height: '80%',
-      width: 'auto'
+      height: "80%",
+      width: "auto"
     },
     detailsContainer: {
-      paddingLeft: '6rem',
-      paddingTop: '4rem',
-      overflow: 'auto',
+      paddingLeft: "6rem",
+      paddingTop: "4rem",
+      overflow: "auto",
       flexGrow: 7
     },
     title: {
       fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-      fontWeight: '300',
-      fontSize: '2rem',
-      wordWrap: 'break-word'
+      fontWeight: "300",
+      fontSize: "2rem",
+      wordWrap: "break-word"
     },
     description: {
       fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-      fontWeight: '400',
-      fontSize: '1.1rem',
-      wordWrap: 'break-word'
+      fontWeight: "400",
+      fontSize: "1.1rem",
+      wordWrap: "break-word"
     },
     details: {
       fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-      fontWeight: '300',
-      fontSize: '1.1rem',
-      wordWrap: 'break-word'
+      fontWeight: "300",
+      fontSize: "1.1rem",
+      wordWrap: "break-word"
     },
     price: {
       fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-      fontSize: '1.2rem',
-      fontWeight: '400',
-      wordWrap: 'break-word'
+      fontSize: "1.2rem",
+      fontWeight: "400",
+      wordWrap: "break-word"
     },
     shipping: {
       fontFamily: "'Helvetica Neue',Helvetica,Arial,sans-serif",
-      fontSize: '1.3rem',
-      fontWeight: '500',
-      wordWrap: 'break-word'
+      fontSize: "1.3rem",
+      fontWeight: "500",
+      wordWrap: "break-word"
     }
   };
   products = [
     {
-      id: 'producto1',
-      title: 'Camisa 1',
-      description: 'Descripción',
-      price: 100.0,
-      image:
-        'https://vangogh.teespring.com/v3/image/oGRwVyoQlFfX-UDpYHwSIjMuDa0/480/560.jpg',
-      shipping: 'No shipping'
-    },
-    {
-      id: 'producto2',
-      title: 'Camisa 2',
-      description: 'Descripción',
-      price: 100.0,
-      image:
-        'https://vangogh.teespring.com/v3/image/oGRwVyoQlFfX-UDpYHwSIjMuDa0/480/560.jpg',
-      shipping: 'No shipping'
-    },
-    {
-      id: 'cat',
-      title: 'My Cat Can Live A Better Life Shirt',
+      id: "1",
+      title: "Pendientes de noche",
       description:
-        'I Work Hard So My Cat Can Live A Better Life Shirt, Funny Cat Shirt',
+        "Muy elegantes, aportarán a tu look sofisticación sin separarse de la sencillez.",
       price: 100.0,
       image:
-        'https://vangogh.teespring.com/v3/image/oGRwVyoQlFfX-UDpYHwSIjMuDa0/480/560.jpg',
+        "http://www.kayuaccesorios.com/wp-content/uploads/2018/01/WhatsApp-Image-2018-01-22-at-11.35.29-PM.jpeg",
+      shipping: "No shipping"
+    },
+    {
+      id: "2",
+      title: "Collar flor blanca",
+      description:
+        "Brilla con naturalidad con nuestro collar color blanco, longitud de la cadena 40 – 45 cm.",
+      price: 100.0,
+      image:
+        "http://www.kayuaccesorios.com/wp-content/uploads/2018/01/WhatsApp-Image-2018-01-22-at-11.35.30-PM.jpeg",
+      shipping: "No shipping"
+    },
+    {
+      id: "cat",
+      title: "Pendientes estilo zafiro",
+      description:
+        "Resaltar los materiales preciosos con simplicidad es esencial en nuestro trabajo creativo.",
+      price: 100.0,
+      image:
+        "http://www.kayuaccesorios.com/wp-content/uploads/2018/01/WhatsApp-Image-2018-01-22-at-11.35.31-PM-2.jpeg",
       shipping: `Orders are printed and shipped when the time expires or earlier.
               You can expect your package to arrive 10 - 13 business days after
               the product prints. Expedited or Rush shipping may be available
@@ -178,7 +179,6 @@ class Item extends Component {
             <p style={styles.shipping}>Shipping Info</p>
             <p style={styles.details}>{product.shipping}</p>
           </div>
- 
         </div>
       </Fragment>
     );
